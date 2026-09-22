@@ -1328,3 +1328,302 @@ footer span {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* =====================================================
+   ✨ SOFT ANIMATIONS
+===================================================== */
+
+/* Semua section muncul lembut dari bawah */
+.section,
+.quote-section {
+    animation: sectionReveal linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+@keyframes sectionReveal {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   🌷 PROFILE CARD MELAYANG
+===================================================== */
+
+.profile-card {
+    animation: floatingCard 4s ease-in-out infinite;
+}
+
+@keyframes floatingCard {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(0.4deg);
+    }
+}
+
+
+/* =====================================================
+   ✨ PROFILE PHOTO LEBIH HIDUP
+===================================================== */
+
+.profile-photo {
+    animation: photoFloat 4s ease-in-out infinite;
+}
+
+@keyframes photoFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* =====================================================
+   🌸 ACTIVITY CARD MUNCUL SATU-SATU
+===================================================== */
+
+.activity-card {
+    animation: cardUp linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+}
+
+.activity-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.activity-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.activity-card:nth-child(3) {
+    animation-delay: 0.25s;
+}
+
+.activity-card:nth-child(4) {
+    animation-delay: 0.35s;
+}
+
+.activity-card:nth-child(5) {
+    animation-delay: 0.45s;
+}
+
+@keyframes cardUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   💗 RECOMMENDATION CARD MUNCUL DARI BAWAH
+===================================================== */
+
+.recommendation-card {
+    animation: recommendationUp linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+}
+
+@keyframes recommendationUp {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   🌙 ABOUT CARD
+===================================================== */
+
+.about-content p {
+    animation: aboutUp linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+}
+
+@keyframes aboutUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   ✨ NAVBAR
+===================================================== */
+
+.nav-container {
+    animation: navbarDrop 0.8s ease both;
+}
+
+@keyframes navbarDrop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   🌷 HERO TEXT
+===================================================== */
+
+.hero-text {
+    animation: heroLeft 1s ease both;
+}
+
+@keyframes heroLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =====================================================
+   💕 PROFILE CARD MASUK DARI KANAN
+===================================================== */
+
+.profile-card {
+    animation:
+        profileEnter 1s ease both,
+        floatingCard 4s ease-in-out 1s infinite;
+}
+
+@keyframes profileEnter {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =====================================================
+   🌸 HOVER IMAGE
+===================================================== */
+
+.activity-image img,
+.card-image img {
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+}
+
+.activity-card:hover .activity-image img,
+.recommendation-card:hover .card-image img {
+    transform: scale(1.06);
+}
+
+
+/* =====================================================
+   💫 HOVER PROFILE
+===================================================== */
+
+.profile-card:hover {
+    box-shadow:
+        0 35px 80px rgba(105, 90, 130, 0.15),
+        inset 0 1px rgba(255, 255, 255, 0.9);
+}
+
+
+/* =====================================================
+   📱 MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .profile-card {
+        animation:
+            profileMobile 1s ease both,
+            floatingMobile 4s ease-in-out 1s infinite;
+    }
+
+    @keyframes profileMobile {
+        from {
+            opacity: 0;
+            transform: translateY(35px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes floatingMobile {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-7px);
+        }
+    }
+}
+
+
+/* =====================================================
+   ♡ REDUCE MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
