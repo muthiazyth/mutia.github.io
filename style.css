@@ -996,7 +996,7 @@ footer span {
 
 @media (max-width: 650px) {
 
-    /* NAVBAR */
+        /* NAVBAR */
 
     .navbar {
         top: 12px;
@@ -1005,21 +1005,28 @@ footer span {
     .nav-container {
         width: calc(100% - 28px);
 
-        padding: 14px 17px;
+        padding: 14px 14px;
 
         border-radius: 22px;
     }
 
     .logo {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .nav-links {
-        gap: 13px;
+        display: flex;
+        align-items: center;
+
+        gap: 8px;
+
+        white-space: nowrap;
     }
 
     .nav-links a {
-        font-size: 10px;
+        font-size: 9px;
+
+        white-space: nowrap;
     }
 
 
