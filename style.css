@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap');
 
-/* =========================
+
+/* =========================================================
    RESET
-========================= */
+========================================================= */
 
 * {
     margin: 0;
@@ -28,9 +29,9 @@
 }
 
 
-/* =========================
+/* =========================================================
    BODY
-========================= */
+========================================================= */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -86,9 +87,9 @@ img {
 }
 
 
-/* =========================
+/* =========================================================
    NAVBAR
-========================= */
+========================================================= */
 
 .navbar {
     position: fixed;
@@ -157,7 +158,6 @@ img {
     content: "";
 
     position: absolute;
-
     left: 50%;
     bottom: 4px;
 
@@ -169,7 +169,6 @@ img {
     background: #c28ba9;
 
     transform: translateX(-50%);
-
     transition: 0.3s ease;
 }
 
@@ -184,9 +183,9 @@ img {
 }
 
 
-/* =========================
+/* =========================================================
    HOME / HERO
-========================= */
+========================================================= */
 
 .hero {
     min-height: 100vh;
@@ -209,7 +208,6 @@ img {
     border-radius: 50%;
 
     background: rgba(245, 190, 215, 0.38);
-
     filter: blur(5px);
 
     top: 15%;
@@ -229,7 +227,6 @@ img {
     border-radius: 50%;
 
     background: rgba(190, 187, 238, 0.35);
-
     filter: blur(8px);
 
     bottom: 0;
@@ -252,9 +249,9 @@ img {
 }
 
 
-/* =========================
+/* =========================================================
    HERO TEXT
-========================= */
+========================================================= */
 
 .hero-text {
     max-width: 590px;
@@ -262,7 +259,6 @@ img {
 
 .hello-badge {
     display: inline-flex;
-
     align-items: center;
     gap: 9px;
 
@@ -271,7 +267,6 @@ img {
     border-radius: 50px;
 
     background: rgba(255, 255, 255, 0.43);
-
     border: 1px solid rgba(255, 255, 255, 0.78);
 
     backdrop-filter: blur(15px);
@@ -304,9 +299,7 @@ img {
     font-family: 'DM Serif Display', serif;
 
     font-size: clamp(4rem, 7vw, 6.3rem);
-
     font-weight: 400;
-
     line-height: 0.9;
 
     letter-spacing: -2px;
@@ -318,7 +311,6 @@ img {
     display: block;
 
     font-style: italic;
-
     color: #8b728b;
 }
 
@@ -328,24 +320,20 @@ img {
     color: var(--text-soft);
 
     font-size: 0.94rem;
-
     line-height: 1.85;
 }
 
 .main-button {
     display: inline-flex;
-
     align-items: center;
     gap: 10px;
 
     margin-top: 28px;
-
     padding: 13px 22px;
 
     border-radius: 17px;
 
     background: rgba(255, 255, 255, 0.48);
-
     border: 1px solid rgba(255, 255, 255, 0.8);
 
     box-shadow:
@@ -366,9 +354,9 @@ img {
 }
 
 
-/* =========================
+/* =========================================================
    PROFILE CARD
-========================= */
+========================================================= */
 
 .profile-card {
     width: 370px;
@@ -417,7 +405,6 @@ img {
     position: absolute;
 
     border-radius: 50%;
-
     filter: blur(3px);
 
     pointer-events: none;
@@ -452,7 +439,6 @@ img {
     z-index: 2;
 
     display: flex;
-
     justify-content: space-between;
     align-items: center;
 
@@ -475,7 +461,6 @@ img {
     position: relative;
 
     margin: auto;
-
     padding: 8px;
 
     border-radius: 50%;
@@ -498,7 +483,6 @@ img {
     content: "";
 
     position: absolute;
-
     inset: -9px;
 
     border-radius: 50%;
@@ -513,13 +497,11 @@ img {
     height: 100%;
 
     object-fit: cover;
-
     border-radius: 50%;
 }
 
 .profile-name {
     position: relative;
-
     z-index: 2;
 
     text-align: center;
@@ -531,7 +513,6 @@ img {
     font-family: 'DM Serif Display', serif;
 
     font-size: 2rem;
-
     font-weight: 400;
 }
 
@@ -545,11 +526,9 @@ img {
 
 .profile-tags {
     position: relative;
-
     z-index: 2;
 
     display: flex;
-
     justify-content: center;
     flex-wrap: wrap;
 
@@ -560,7 +539,6 @@ img {
 
 .profile-tags span {
     display: flex;
-
     align-items: center;
     gap: 5px;
 
@@ -569,7 +547,6 @@ img {
     border-radius: 12px;
 
     background: rgba(255, 255, 255, 0.38);
-
     border: 1px solid rgba(255, 255, 255, 0.65);
 
     color: var(--text-soft);
@@ -587,31 +564,27 @@ img {
     position: absolute;
 
     bottom: 20px;
-
     left: 25px;
     right: 25px;
 
     display: flex;
-
     justify-content: space-between;
 
     color: rgba(80, 70, 85, 0.5);
 
     font-size: 0.62rem;
-
     letter-spacing: 1px;
 }
 
 
-/* =========================
+/* =========================================================
    SECTION HEADINGS
-========================= */
+========================================================= */
 
 .section-heading p {
     color: var(--text-soft);
 
     font-size: 0.68rem;
-
     font-weight: 600;
 
     letter-spacing: 3px;
@@ -622,9 +595,7 @@ img {
     font-family: 'DM Serif Display', serif;
 
     font-size: clamp(2.8rem, 5vw, 4.3rem);
-
     font-weight: 400;
-
     line-height: 0.95;
 
     margin-top: 15px;
@@ -653,9 +624,9 @@ img {
 }
 
 
-/* =========================
+/* =========================================================
    ABOUT
-========================= */
+========================================================= */
 
 .about {
     min-height: 80vh;
@@ -665,7 +636,6 @@ img {
     margin-top: 50px;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
 
     gap: 30px;
@@ -677,7 +647,6 @@ img {
     border-radius: 27px;
 
     background: rgba(255, 255, 255, 0.4);
-
     border: 1px solid rgba(255, 255, 255, 0.72);
 
     backdrop-filter: blur(20px);
@@ -689,7 +658,6 @@ img {
     color: var(--text-soft);
 
     font-size: 0.88rem;
-
     line-height: 1.9;
 
     transition: 0.3s ease;
@@ -702,12 +670,13 @@ img {
 }
 
 
-/* =========================
+/* =========================================================
    QUOTE
-========================= */
+========================================================= */
 
 .quote-section {
     padding: 60px 20px;
+
     text-align: center;
 }
 
@@ -725,7 +694,6 @@ img {
     border: 2px dashed #ffb3c1;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -736,7 +704,6 @@ img {
     font-family: 'DM Serif Display', serif;
 
     font-size: 1.7rem;
-
     font-style: italic;
 
     color: #ff4d6d;
@@ -757,9 +724,9 @@ img {
 }
 
 
-/* =========================
+/* =========================================================
    ACTIVITIES
-========================= */
+========================================================= */
 
 .activities-grid {
     display: grid;
@@ -777,7 +744,6 @@ img {
     border-radius: 28px;
 
     background: rgba(255, 255, 255, 0.4);
-
     border: 1px solid rgba(255, 255, 255, 0.75);
 
     backdrop-filter: blur(20px);
@@ -827,14 +793,12 @@ img {
     height: 38px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     border-radius: 50%;
 
     background: rgba(255, 255, 255, 0.55);
-
     border: 1px solid rgba(255, 255, 255, 0.8);
 
     backdrop-filter: blur(12px);
@@ -850,7 +814,6 @@ img {
     color: #9a8298;
 
     font-size: 0.65rem;
-
     font-weight: 600;
 
     letter-spacing: 2px;
@@ -860,7 +823,6 @@ img {
     font-family: 'DM Serif Display', serif;
 
     font-size: 1.65rem;
-
     font-weight: 400;
 
     margin: 7px 0 10px;
@@ -870,7 +832,6 @@ img {
     color: var(--text-soft);
 
     font-size: 0.82rem;
-
     line-height: 1.75;
 }
 
@@ -884,14 +845,12 @@ img {
     height: 35px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     border-radius: 50%;
 
     background: rgba(255, 255, 255, 0.4);
-
     border: 1px solid rgba(255, 255, 255, 0.6);
 
     transition: 0.3s ease;
@@ -904,9 +863,9 @@ img {
 }
 
 
-/* =========================
+/* =========================================================
    RECOMMENDATIONS
-========================= */
+========================================================= */
 
 .recommendation-grid {
     display: grid;
@@ -922,7 +881,6 @@ img {
     border-radius: 28px;
 
     background: rgba(255, 255, 255, 0.4);
-
     border: 1px solid rgba(255, 255, 255, 0.75);
 
     backdrop-filter: blur(20px);
@@ -970,13 +928,11 @@ img {
     border-radius: 12px;
 
     background: rgba(255, 255, 255, 0.6);
-
     border: 1px solid rgba(255, 255, 255, 0.75);
 
     backdrop-filter: blur(12px);
 
     font-size: 0.6rem;
-
     letter-spacing: 1.5px;
 }
 
@@ -988,7 +944,6 @@ img {
     font-family: 'DM Serif Display', serif;
 
     font-size: 1.7rem;
-
     font-weight: 400;
 
     margin-bottom: 9px;
@@ -998,14 +953,13 @@ img {
     color: var(--text-soft);
 
     font-size: 0.8rem;
-
     line-height: 1.75;
 }
 
 
-/* =========================
+/* =========================================================
    CONTACT
-========================= */
+========================================================= */
 
 .contact-box {
     display: grid;
@@ -1019,7 +973,6 @@ img {
     border-radius: 35px;
 
     background: rgba(255, 255, 255, 0.4);
-
     border: 1px solid rgba(255, 255, 255, 0.75);
 
     backdrop-filter: blur(22px);
@@ -1033,9 +986,7 @@ img {
     color: var(--text-soft);
 
     font-size: 0.68rem;
-
     letter-spacing: 3px;
-
     font-weight: 600;
 }
 
@@ -1049,9 +1000,7 @@ img {
 
 .contact-info a {
     display: flex;
-
     align-items: center;
-
     gap: 17px;
 
     padding: 17px 20px;
@@ -1059,7 +1008,6 @@ img {
     border-radius: 18px;
 
     background: rgba(255, 255, 255, 0.32);
-
     border: 1px solid rgba(255, 255, 255, 0.62);
 
     transition: 0.3s ease;
@@ -1076,7 +1024,6 @@ img {
     height: 42px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -1103,14 +1050,13 @@ img {
 
 .contact-info strong {
     font-size: 0.78rem;
-
     font-weight: 500;
 }
 
 
-/* =========================
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
 
 footer {
     padding: 28px 7%;
@@ -1151,7 +1097,8 @@ footer p {
 }
 
 @keyframes floatCard {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0);
     }
 
@@ -1161,7 +1108,8 @@ footer p {
 }
 
 @keyframes pulseGlow {
-    0%, 100% {
+    0%,
+    100% {
         opacity: 0.35;
         transform: scale(1);
     }
@@ -1183,23 +1131,19 @@ footer p {
 }
 
 .hello-badge {
-    animation:
-        fadeInUp 0.8s ease 0.1s both;
+    animation: fadeInUp 0.8s ease 0.1s both;
 }
 
 .hero h1 {
-    animation:
-        fadeInUp 0.9s ease 0.2s both;
+    animation: fadeInUp 0.9s ease 0.2s both;
 }
 
 .hero-description {
-    animation:
-        fadeInUp 0.9s ease 0.35s both;
+    animation: fadeInUp 0.9s ease 0.35s both;
 }
 
 .main-button {
-    animation:
-        fadeInUp 0.9s ease 0.5s both;
+    animation: fadeInUp 0.9s ease 0.5s both;
 }
 
 
@@ -1219,14 +1163,13 @@ footer p {
 
 .scroll-animate.show {
     opacity: 1;
-
     transform: translateY(0);
 }
 
 
-/* =========================
-   SECTION HEADING
-========================= */
+/* =========================================================
+   SECTION HEADING ANIMATION
+========================================================= */
 
 .section-heading.scroll-animate {
     transform: translateY(25px);
@@ -1237,9 +1180,9 @@ footer p {
 }
 
 
-/* =========================
+/* =========================================================
    ABOUT STAGGER
-========================= */
+========================================================= */
 
 .about-content p:nth-child(1) {
     transition-delay: 0.1s;
@@ -1250,18 +1193,18 @@ footer p {
 }
 
 
-/* =========================
-   QUOTE
-========================= */
+/* =========================================================
+   QUOTE ANIMATION
+========================================================= */
 
 .quote-container.scroll-animate {
     transition-delay: 0.1s;
 }
 
 
-/* =========================
+/* =========================================================
    ACTIVITIES STAGGER
-========================= */
+========================================================= */
 
 .activity-card:nth-child(1) {
     transition-delay: 0.05s;
@@ -1284,9 +1227,9 @@ footer p {
 }
 
 
-/* =========================
+/* =========================================================
    RECOMMENDATIONS STAGGER
-========================= */
+========================================================= */
 
 .recommendation-card:nth-child(1) {
     transition-delay: 0.05s;
@@ -1301,9 +1244,9 @@ footer p {
 }
 
 
-/* =========================
-   CONTACT
-========================= */
+/* =========================================================
+   CONTACT ANIMATION
+========================================================= */
 
 .contact-title.scroll-animate {
     transition-delay: 0.05s;
@@ -1314,9 +1257,9 @@ footer p {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 950px) {
 
@@ -1339,3 +1282,188 @@ footer p {
 
     .recommendation-card:last-child {
         grid-column: span 2;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .section {
+        padding: 85px 6%;
+    }
+
+    .navbar {
+        top: 10px;
+        left: 3%;
+        right: 3%;
+    }
+
+    .nav-container {
+        padding: 11px 14px;
+    }
+
+    .nav-links {
+        gap: 1px;
+    }
+
+    .nav-links a {
+        padding: 7px 6px;
+        font-size: 0.62rem;
+    }
+
+    .hero {
+        padding: 125px 6% 80px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 55px;
+    }
+
+    .hero-text {
+        max-width: 600px;
+    }
+
+    .hero-description {
+        margin: auto;
+    }
+
+    .hero h1 {
+        font-size: 3.8rem;
+    }
+
+    .profile-card {
+        width: 330px;
+        min-height: 480px;
+    }
+
+    .profile-photo {
+        width: 215px;
+        height: 215px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        margin-top: 35px;
+    }
+
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendation-card:last-child {
+        grid-column: auto;
+    }
+
+    .contact-box {
+        grid-template-columns: 1fr;
+
+        padding: 35px 25px;
+
+        gap: 40px;
+    }
+
+    .scroll-animate {
+        transform: translateY(25px);
+
+        transition-duration: 0.7s;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .nav-links a {
+        font-size: 0.56rem;
+        padding: 7px 4px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 3.1rem;
+        letter-spacing: -1px;
+    }
+
+    .hello-badge {
+        font-size: 0.58rem;
+        letter-spacing: 1.5px;
+    }
+
+    .hero-description {
+        font-size: 0.82rem;
+    }
+
+    .profile-card {
+        width: 290px;
+        min-height: 450px;
+        padding: 21px;
+    }
+
+    .profile-photo {
+        width: 190px;
+        height: 190px;
+    }
+
+    .profile-name h2 {
+        font-size: 1.7rem;
+    }
+
+    .profile-tags span {
+        font-size: 0.55rem;
+        padding: 6px 8px;
+    }
+
+    .activity-image {
+        height: 220px;
+    }
+
+    .card-image {
+        height: 250px;
+    }
+
+    .quote-container {
+        padding: 45px 22px;
+    }
+
+    .quote-container p {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .scroll-animate {
+        opacity: 1;
+        transform: none;
+    }
+}
